@@ -52,3 +52,12 @@ let mousedown = false;
 progress.addEventListener('mousedown', e => mousedown = true);
 progress.addEventListener('mouseup', e => mousedown = false);
 progress.addEventListener('mousemove', e => mousedown && scrub(e));
+
+
+const fullscreen = player.querySelector('.fullscreen');
+
+function handleFullscreen(e) {
+  video.requestFullscreen();
+}
+// let fullscreen = video.wid
+fullscreen.addEventListener('click', handleFullscreen)
