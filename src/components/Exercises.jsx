@@ -1,6 +1,8 @@
 
 import ExerciseCard from "./ExerciseCard";
 
+import "./Exercises.scss"
+
 const Exercises = () => {
   return (
     <div className='Exercises'>
